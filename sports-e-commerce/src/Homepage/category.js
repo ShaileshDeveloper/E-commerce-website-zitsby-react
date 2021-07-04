@@ -3,11 +3,17 @@ import mencontainerimage from '../images/category-1.jpg'
 import womencontainerimage from '../images/category-3.jpg'
 import kidscontainerimage from '../images/category-2.jpg'
 import "./category.css"
+
+import {NavLink} from "react-router-dom"
+
+
 function  Category() {
     return (
         <div className="category__container">
            <div className="men__container">
+           <NavLink to ="/mensproduct">
                <img src ={mencontainerimage} alt ="ss" />
+               </NavLink>
                <p><strong>MEN</strong></p>
            </div>
            <div className="women__container">

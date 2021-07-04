@@ -2,6 +2,8 @@ import React from 'react'
 import "./productsection.css"
 import data from '../Data/datahomepage'
 
+
+
 function Productsection() {
     return (
         <div className="product__section__container">

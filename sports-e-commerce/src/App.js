@@ -8,9 +8,8 @@ import Productsmenscreen from './screens/productsmenscreen';
 function App() {
   return (
     <div className="app">
-     <Homescreen />
-     <Productsmenscreen />
      <Routes>
+     <Route path ="/" element ={<Homescreen /> } />
      <Route path ="/mensproduct" element ={<Productsmenscreen />} />
      </Routes>
     </div>
