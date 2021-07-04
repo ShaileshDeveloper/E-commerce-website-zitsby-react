@@ -3,6 +3,7 @@ import Home from '../Homepage/Home'
 import Header from '../Homepage/Header'
 import "./homescreen.css"
 import Category from '../Homepage/category'
+import Productsection from '../Homepage/productsection'
 
 function Homescreen() {
     return (
@@ -13,6 +14,7 @@ function Homescreen() {
             
         </div>
         <Category />
+        <Productsection />
         </div>
     )
 }
