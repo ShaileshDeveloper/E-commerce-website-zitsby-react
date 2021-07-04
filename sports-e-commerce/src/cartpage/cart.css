@@ -13,7 +13,8 @@
 }
 
 .cart__price__detail__section{
-    border:1px solid #000000;
+    /* border:1px solid #000000; */
+    padding: 3rem;
 }
 
 .cart__product{
