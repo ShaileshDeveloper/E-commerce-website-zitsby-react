@@ -9,8 +9,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem 0 5rem;
-    position:sticky;
-    top: 0;
     z-index: 100px;
     /* background-color: #FF9A8B;
     background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);

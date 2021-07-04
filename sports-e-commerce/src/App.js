@@ -4,6 +4,7 @@ import {Routes , Route} from "react-router-dom"
 
 import Homescreen from "./screens/Homescreen"
 import Productsmenscreen from './screens/productsmenscreen';
+import Cartscreen from './screens/cartscreen';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
      <Routes>
      <Route path ="/" element ={<Homescreen /> } />
      <Route path ="/mensproduct" element ={<Productsmenscreen />} />
+     <Route path  = "/cart" element ={<Cartscreen />} />
      </Routes>
     </div>
   );

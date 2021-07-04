@@ -41,3 +41,7 @@
     border: none;
     transition: 0.15s;
 }
+
+.button__container{
+    display: flex;
+}
