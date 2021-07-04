@@ -1,0 +1,15 @@
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    width:screen;
+    height: 100px;
+    background-color:  #F3F3F3;
+    align-items: center;
+   justify-content: center;
+}
+
+.footer__container li{
+    list-style-type: none;
+    margin: 10px;
+}
+
