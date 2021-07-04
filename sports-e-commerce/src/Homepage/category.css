@@ -1,0 +1,59 @@
+.category__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom:2rem;
+
+}
+
+.men__container{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 0.5sec;
+    text-align: center;
+
+}
+
+.men__container:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+.men__container img{
+    width:100%;
+}
+
+
+.women__container{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 2sec;
+    text-align: center;
+
+ 
+}
+.women__container img{
+    width:100%;
+    
+}
+
+.women__container:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+   transform: scale(1.1);
+}
+
+.kids__container{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 0.5sec;
+    text-align: center;
+
+}
+.kids__container img{
+    width:100%;
+}
+
+.kids__container:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+   transform: scale(1.1);
+}
