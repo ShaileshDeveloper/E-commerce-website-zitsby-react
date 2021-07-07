@@ -69,7 +69,7 @@ function Cart() {
           </div>
           <div className="cart__quantity__total">
             
-            Total quantity <span> {state.cart.length} </span>
+            Total items <span> {state.cart.length} </span>
           </div>
         </div>
       </div>

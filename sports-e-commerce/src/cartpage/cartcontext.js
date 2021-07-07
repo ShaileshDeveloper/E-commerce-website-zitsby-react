@@ -1,11 +1,11 @@
-import { createContext, useContext, useReducer } from "react";
-import data from "../Data/datahomepage";
+import { createContext, useContext, useReducer , useState } from "react";
+import {datamenproducts} from "../Data/datahomepage";
 
 const Cartcontext = createContext();
 
 export function CartProvider({ children }) {
-  const [state, dispatch] = useReducer(addToCart, { home: data, cart: [] });
-
+  const [state, dispatch] = useReducer(addToCart, { home: datamenproducts, cart: [] });
+  const [searchItems ,setSearchInItems] = useState("");
   function addToCart(state, action) {
     let exist = state.cart.find((item) => item.id === action.item.id);
     switch (action.type) {
@@ -56,7 +56,7 @@ export function CartProvider({ children }) {
   }
 
   return (
-    <Cartcontext.Provider value={{ state, dispatch }}>
+    <Cartcontext.Provider value={{ state, dispatch , searchItems , setSearchInItems}}>
       {children}
     </Cartcontext.Provider>
   );
