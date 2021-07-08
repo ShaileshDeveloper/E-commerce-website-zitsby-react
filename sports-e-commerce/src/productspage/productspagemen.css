@@ -1,1 +1,7 @@
 
+.sort__class{
+    display: flex;
+    justify-content: center;
+}
+
+.sort__class li {margin: 0 1rem 0 1rem ;}

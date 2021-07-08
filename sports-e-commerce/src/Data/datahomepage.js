@@ -18,6 +18,8 @@ const data = [
     product: "hrx shoes",
     price: 699,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 1,
@@ -25,6 +27,8 @@ const data = [
     product: "us polo tshirt",
     price: 999,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 2,
@@ -32,6 +36,8 @@ const data = [
     product: "nike shoes",
     price: 1099,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 3,
@@ -39,6 +45,8 @@ const data = [
     product: "puma t-shirt",
     price: 1299,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 4,
@@ -46,6 +54,8 @@ const data = [
     product: "fossil watch",
     price: 1499,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 5,
@@ -53,6 +63,8 @@ const data = [
     product: "roadster-shoes",
     price: 1699,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
 ];
 
@@ -65,6 +77,8 @@ export const datamenproducts = [
     product: "hrx shoes",
     price: 699,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 1,
@@ -72,6 +86,8 @@ export const datamenproducts = [
     product: "us polo tshirt",
     price: 999,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 2,
@@ -79,6 +95,8 @@ export const datamenproducts = [
     product: "nike shoes",
     price: 1099,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 3,
@@ -86,6 +104,8 @@ export const datamenproducts = [
     product: "puma t-shirt",
     price: 1299,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 4,
@@ -93,6 +113,8 @@ export const datamenproducts = [
     product: "fossil watch",
     price: 1499,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 5,
@@ -100,6 +122,8 @@ export const datamenproducts = [
     product: "roadster-shoes",
     price: 1699,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 6,
@@ -107,6 +131,8 @@ export const datamenproducts = [
     product: "hrx shoes",
     price: 6.99,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 7,
@@ -114,6 +140,8 @@ export const datamenproducts = [
     product: "us polo tshirt",
     price: 9.99,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 8,
@@ -121,6 +149,8 @@ export const datamenproducts = [
     product: "nike shoes",
     price: 10.99,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 9,
@@ -128,6 +158,8 @@ export const datamenproducts = [
     product: "puma t-shirt",
     price: 12.99,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
   {
     id: 10,
@@ -135,6 +167,8 @@ export const datamenproducts = [
     product: "fossil watch",
     price: 14.99,
     quantity: 0,
+    inStock: false,
+    fastDelivery: true
   },
   {
     id: 11,
@@ -142,5 +176,7 @@ export const datamenproducts = [
     product: "roadster-shoes",
     price: 16.99,
     quantity: 0,
+    inStock: true,
+    fastDelivery: false
   },
 ];

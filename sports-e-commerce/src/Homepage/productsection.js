@@ -17,7 +17,7 @@ export function Card(item) {
           <button onClick={() => dispatch({ type: "ADD_TO_CART", item })}>
             AddToCart
           </button>
-          <button>Wishlist</button>
+          <button onClick={() => dispatch({ type: "ADD_TO_WISHLIST" , item})}>Wishlist</button>
         </div>
       </div>
     );

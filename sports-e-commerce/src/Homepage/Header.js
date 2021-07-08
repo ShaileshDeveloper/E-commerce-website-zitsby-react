@@ -26,8 +26,11 @@ export function HeaderHomepage() {
         <NavLink to="/mensproduct">
           <li className="option2">Products</li>
         </NavLink>
+        <NavLink to="/wishlist">
+          <li className="option3">Wishlist</li>
+        </NavLink>
         <NavLink to="/cart">
-          <li className="option3">Login</li>
+          <li className="option4">Login</li>
         </NavLink>
         <li>
           <NavLink to="/cart">
@@ -64,12 +67,7 @@ function Header() {
         <button>search</button>
       </div>
 
-      <select>
-          <option>high-to-low</option>
-          <option>low-t0-high</option>
-          <option>in-stock</option>
-          <option>fast-delivery</option>
-      </select>
+     
       <div className="header__navbar">
         <NavLink to="/">
           <li className="option1">Home</li>
@@ -77,8 +75,11 @@ function Header() {
         <NavLink to="/mensproduct">
           <li className="option2">Products</li>
         </NavLink>
+        <NavLink to="/wishlist">
+          <li className="option3">Wishlist</li>
+        </NavLink>
         <NavLink to="/cart">
-          <li className="option3">Login</li>
+          <li className="option4">Login</li>
         </NavLink>
         <li>
           <NavLink to="/cart">

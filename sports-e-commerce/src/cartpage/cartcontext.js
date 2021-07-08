@@ -4,10 +4,14 @@ import {datamenproducts} from "../Data/datahomepage";
 const Cartcontext = createContext();
 
 export function CartProvider({ children }) {
-  const [state, dispatch] = useReducer(addToCart, { home: datamenproducts, cart: [] });
+  const [state, dispatch] = useReducer(addToCart, { home: datamenproducts, cart: [] , wishlist:[], showFastDeliveryOnly:false , sortBy:null , showInventoryAll:true });
   const [searchItems ,setSearchInItems] = useState("");
+
+
+
   function addToCart(state, action) {
     let exist = state.cart.find((item) => item.id === action.item.id);
+    let existwishlist = state.wishlist.find((item) => item.id === action.item.id);
     switch (action.type) {
       case "ADD_TO_CART":
         return {
@@ -49,6 +53,33 @@ export function CartProvider({ children }) {
              ...state , 
              cart: state.cart.filter((item) => item.id !== action.item.id)
          }
+
+         case "TOGGLE_INVENTORY":
+         
+          return (state = {
+            ...state,
+            showInventoryAll: !state.showInventoryAll
+          });
+  
+        case "TOGGLE_DELIVERY":
+          
+          return (state = {
+            ...state,
+            showFastDeliveryOnly: !state.showFastDeliveryOnly
+          });
+
+          case "SORT":
+            return {
+              ...state,
+              sortBy: action.payload
+            };
+
+          case "ADD_TO_WISHLIST":
+             return {
+               ...state,
+               wishlist: existwishlist === undefined ? state.wishlist.concat(action.item) : state.wishlist
+             }
+
 
       default:
         break;
