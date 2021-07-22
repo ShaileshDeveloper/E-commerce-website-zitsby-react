@@ -9,7 +9,9 @@
   
  
 }
-
+.greeting__header{
+  color: lightgray
+}
 .header__navbar {
   display: flex;
   align-items: center;

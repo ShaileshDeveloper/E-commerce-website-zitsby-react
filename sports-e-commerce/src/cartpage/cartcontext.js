@@ -4,7 +4,7 @@ import {datamenproducts} from "../Data/datahomepage";
 const Cartcontext = createContext();
 
 export function CartProvider({ children }) {
-  const [state, dispatch] = useReducer(addToCart, { home: datamenproducts, cart: [] , wishlist:[], showFastDeliveryOnly:false , sortBy:null , showInventoryAll:true });
+  const [state, dispatch] = useReducer(addToCart, { home: datamenproducts, cart: [] , wishlist:[], showFastDeliveryOnly:false , sortBy:null , showInventoryAll:true , user:null});
   const [searchItems ,setSearchInItems] = useState("");
 
 
@@ -79,6 +79,11 @@ export function CartProvider({ children }) {
                ...state,
                wishlist: existwishlist === undefined ? state.wishlist.concat(action.item) : state.wishlist
              }
+          case "SET_USER":
+            return {
+              ...state, 
+              user: action.user
+            }
 
 
       default:

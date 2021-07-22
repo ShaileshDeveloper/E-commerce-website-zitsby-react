@@ -71,6 +71,9 @@ function Cart() {
             
             Total items <span> {state.cart.length} </span>
           </div>
+          <div className = "cart__checkout__button">
+          <button>Proceed to checkouts</button>
+          </div>
         </div>
       </div>
     </>

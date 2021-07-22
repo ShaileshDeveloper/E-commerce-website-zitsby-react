@@ -63,3 +63,17 @@
     justify-content: space-between;
     display: flex;
 }
+
+.cart__checkout__button{
+    display: flex;
+    justify-content:center;
+    margin-top:20px
+}
+
+.cart__checkout__button > button{
+    width:80%;
+    border-radius:3px;
+    padding:.4rem;
+    background-color: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;;
+}

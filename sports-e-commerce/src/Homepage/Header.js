@@ -5,11 +5,20 @@ import logoimg from "../images/logo-white.png";
 import cartimage from "../images/cart.png";
 import { NavLink } from "react-router-dom";
 import { Usecart } from "../cartpage/cartcontext";
+import { auth } from "../firebase";
 
 // import SearchIcon from 'material-ui/icons/Search'
 
 export function HeaderHomepage() {
-  const { state } = Usecart();
+  const { state  } = Usecart();
+
+
+const handleAuthentication =() => {
+  if(state.user){
+    auth.signOut();
+  }
+}
+
   return (
     <div className="header__container">
       <img
@@ -19,6 +28,7 @@ export function HeaderHomepage() {
         width="100px"
         height="30px"
       />
+      <h3 className = "greeting__header">Hello {state.user ? state.user.email : "Guest"}</h3>
       <div className="header__navbar">
         <NavLink to="/">
           <li className="option1">Home</li>
@@ -29,8 +39,11 @@ export function HeaderHomepage() {
         <NavLink to="/wishlist">
           <li className="option3">Wishlist</li>
         </NavLink>
-        <NavLink to="/login">
-          <li className="option4">Login</li>
+        
+        <NavLink to={ !state.user && "/login"}>
+          <li 
+          onClick={handleAuthentication}
+          className="option4">{state.user ? "sign out" :"sign in"}</li>
         </NavLink>
         <li>
           <NavLink to="/cart">
