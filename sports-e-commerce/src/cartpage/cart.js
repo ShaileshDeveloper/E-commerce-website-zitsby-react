@@ -1,14 +1,14 @@
 import React from "react";
 import "./cart.css";
 import { Usecart } from "./cartcontext";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const { state, dispatch } = Usecart();
 
-let navigate = useNavigate();
+  let navigate = useNavigate();
   let totalprice = state.cart.reduce(
-    (acc, person) => acc + ((person.quantity * person.price)+person.price) ,
+    (acc, person) => acc + (person.quantity * person.price + person.price),
     0
   );
 
@@ -16,7 +16,6 @@ let navigate = useNavigate();
     <>
       <div className="cart__container">
         <div className="cart__product__detail__section">
-          
           {state.cart.map((item) => {
             return (
               <>
@@ -28,7 +27,6 @@ let navigate = useNavigate();
                     <div className="span__container">
                       <span> Price: $ {item.price} </span>
                       <span>
-                        
                         <small> {item.product} </small>
                       </span>
                     </div>
@@ -41,10 +39,9 @@ let navigate = useNavigate();
                           })
                         }
                       >
-                        
                         +
                       </button>
-                      {item.quantity+1}
+                      {item.quantity + 1}
                       <button
                         onClick={() =>
                           dispatch({
@@ -53,10 +50,15 @@ let navigate = useNavigate();
                           })
                         }
                       >
-                        
                         -
                       </button>
-                      <button onClick={() => dispatch({ type: "REMOVE_FROM_CART", item })}>Remove</button>
+                      <button
+                        onClick={() =>
+                          dispatch({ type: "REMOVE_FROM_CART", item })
+                        }
+                      >
+                        Remove
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -66,15 +68,15 @@ let navigate = useNavigate();
         </div>
         <div className="cart__price__detail__section">
           <div className="cart__price__total">
-            
-            Total price <span> {totalprice} </span>
+            Total price <span> Rs {totalprice} </span>
           </div>
           <div className="cart__quantity__total">
-            
             Total items <span> {state.cart.length} </span>
           </div>
-          <div className = "cart__checkout__button">
-          <button onClick ={(e) => navigate('/payments')}>Proceed to checkouts</button>
+          <div className="cart__checkout__button">
+            <button onClick={(e) => navigate("/payment")}>
+              Proceed to checkouts
+            </button>
           </div>
         </div>
       </div>

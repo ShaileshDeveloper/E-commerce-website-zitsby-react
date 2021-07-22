@@ -1,0 +1,15 @@
+.payment__details__container{
+    padding:3rem;
+    width:30%;
+    border:1px solid lightgray;
+    margin-top:10px
+}
+
+
+.payment__details__container > h3 {
+    margin-bottom: 20px;
+}
+
+.payment__price__details{
+    margin-top: 10px;
+}
