@@ -9,6 +9,7 @@ import Wishlistscreen from "./screens/wishlistscreen";
 import Loginscreen from "./screens/loginscreen";
 import { auth } from "./firebase";
 import { Usecart } from "./cartpage/cartcontext";
+import PaymentScreen from "./screens/paymentscreen"
 function App() {
   const { dispatch } = Usecart();
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/cart" element={<Cartscreen />} />
         <Route path="/wishlist" element={<Wishlistscreen />} />
         <Route path="/login" element={<Loginscreen />} />
+        <Route path="/payment" element={<PaymentScreen />} />
       </Routes>
     </div>
   );
