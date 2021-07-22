@@ -27,6 +27,7 @@ function Category() {
         <img src={kidscontainerimage} alt="ss" />
         <p>
           <strong>KIDS</strong>
+          
         </p>
       </div>
     </div>

@@ -29,7 +29,7 @@ export function HeaderHomepage() {
         <NavLink to="/wishlist">
           <li className="option3">Wishlist</li>
         </NavLink>
-        <NavLink to="/cart">
+        <NavLink to="/login">
           <li className="option4">Login</li>
         </NavLink>
         <li>
@@ -78,7 +78,7 @@ function Header() {
         <NavLink to="/wishlist">
           <li className="option3">Wishlist</li>
         </NavLink>
-        <NavLink to="/cart">
+        <NavLink to="/login">
           <li className="option4">Login</li>
         </NavLink>
         <li>

@@ -5,7 +5,7 @@ import Homescreen from "./screens/Homescreen";
 import Productsmenscreen from "./screens/productsmenscreen";
 import Cartscreen from "./screens/cartscreen";
 import Wishlistscreen from "./screens/wishlistscreen";
-
+import Loginscreen from "./screens/loginscreen";
 function App() {
   return (
     <div className="app">
@@ -14,6 +14,7 @@ function App() {
         <Route path="/mensproduct" element={<Productsmenscreen />} />
         <Route path="/cart" element={<Cartscreen />} />
         <Route path="/wishlist" element={<Wishlistscreen />} />
+        <Route path="/login" element={<Loginscreen />} />
       </Routes>
     </div>
   );
